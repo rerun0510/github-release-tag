@@ -11,17 +11,17 @@ jobs:
     permissions:
       pull-requests: write
     steps:
-      - uses: agaroot-technologies/action-restrict-pr-label@v1.0.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          rules: |
-            main <- production [release] [production]
-            develop <- feature/* [feature]
-            develop <- bugfix/* [bugfix]
-            develop <- refactor/* [refactor]
-            develop <- chore/* [chore]
-            develop <- deps/* [deps]
+      #   - uses: agaroot-technologies/action-restrict-pr-label@v1.0.0
+      #     env:
+      #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     with:
+      #       rules: |
+      #         main <- production [release] [production]
+      #         develop <- feature/* [feature]
+      #         develop <- bugfix/* [bugfix]
+      #         develop <- refactor/* [refactor]
+      #         develop <- chore/* [chore]
+      #         develop <- deps/* [deps]
 
       # APIディレクトリに変更がある場合は「api」ラベルを付ける
       - name: Add API label
