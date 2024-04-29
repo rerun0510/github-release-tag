@@ -1,4 +1,4 @@
-name: Restrict pr label
+name: Restrict pr api label
 on:
   pull_request:
     branches:
