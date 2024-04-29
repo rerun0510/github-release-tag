@@ -1,0 +1,11 @@
+changelog:
+  categories:
+    - title: API Changes
+      labels:
+        - api
+    - title: Front Changes
+      labels:
+        - front
+    - title: Other Changes
+      labels:
+        - "*"
