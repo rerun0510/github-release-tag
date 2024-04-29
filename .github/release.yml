@@ -9,3 +9,8 @@ changelog:
     - title: Other Changes
       labels:
         - "*"
+  dual_categories:
+    - title: API and Front Changes
+      labels:
+        - api
+        - front
